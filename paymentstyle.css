@@ -1,0 +1,256 @@
+#section4 {
+  border: 1px solid #fa8a53;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.cod-online {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.radio {
+  padding: 10px 20px;
+}
+
+label > input[type="radio"] {
+  display: none;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(
+    #fa8a53 0%,
+    #fa8a53 40%,
+    transparent 50%,
+    transparent
+  );
+  border-color: #fa8a53;
+}
+label > input[type="radio"]:checked + * {
+  color: #fa8a53;
+}
+
+#section4 {
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+
+/* pay online form */
+body {
+  font-family: Arial;
+  font-size: 15px;
+  padding: 8px;
+}
+.col-50 h3 {
+  padding-top: 10px;
+  font-size: 35px;
+  text-align: center;
+  color: #fa8a53;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  width: 100%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+/* .col-50,
+.col-75 {
+  padding: 0 16px;
+} */
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.col-50 input[type="text"] {
+  width: 92%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.col-50 input[type="text"]:focus {
+  border: none;
+  outline: 2px solid #fa8a53;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196f3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.pay_button {
+  margin: 15px 0px;
+  width: 200px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  font-weight: 600;
+  border: 1px solid #fa8a53;
+  color: #fa8a53;
+  border-radius: 10px;
+}
+
+#my_blur {
+  width: 100%;
+}
+
+#my_blur.active {
+  /* .active and :active work differently */
+  filter: blur(20px);
+}
+
+#section4 {
+  background-color: white;
+  display: none;
+  width: 60%;
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  flex-direction: column;
+}
+
+.payonline-submit-btn {
+  background-color: #fa8a53;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 550;
+  padding: 10px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.payonline-submit-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1200px) {
+  #section4 {
+    left: 18%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #section4 {
+    left: 16%;
+  }
+}
+
+@media (max-width: 600px) {
+  .width_full {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .pay_button {
+    width: 150px;
+  }
+
+  #section4 {
+    left: 12%;
+  }
+
+  .col-50 h3 {
+    font-size: 23px;
+    padding: 10px 0px;
+  }
+}
